@@ -1,0 +1,820 @@
+{
+	"info": {
+		"_postman_id": "d423a85b-d809-44ad-bec8-a5c8325cda70",
+		"name": "Adoption System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37951916"
+	},
+	"item": [
+		{
+			"name": "Animals",
+			"item": [
+				{
+					"name": "AnimalAdd",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "PelusaUwU",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Gato peten",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "cat",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "7",
+									"type": "text"
+								},
+								{
+									"key": "keeper",
+									"value": "67a9267510df89c310edaa34",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "true",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/v1/animal/save",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"v1",
+								"animal",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Animaltest",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Juanito",
+									"type": "text"
+								},
+								{
+									"key": "surname",
+									"value": "Klee",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "klee52",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "jklee@kinal.edu.gt",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "klee123Dll!",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "phone",
+									"value": "1234567845",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "CLIENT",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/v1/animal/test",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"v1",
+								"animal",
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3626/v1/animal/67a926e210df89c310edaa3a",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"v1",
+								"animal",
+								"67a926e210df89c310edaa3a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listartodos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:3626/v1/animal/",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"v1",
+								"animal",
+								""
+							],
+							"query": [
+								{
+									"key": "Authorization",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateAnimal",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "GatoPel",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "gato malo",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "cat",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "keeper",
+									"value": "67a9267510df89c310edaa34",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "true",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/v1/animal/updateAnimal/67a926f410df89c310edaa3d",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"v1",
+								"animal",
+								"updateAnimal",
+								"67a926f410df89c310edaa3d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteAnimal",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:3626/v1/animal/deleteAnimal/67a926f410df89c310edaa3d",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"v1",
+								"animal",
+								"deleteAnimal",
+								"67a926f410df89c310edaa3d"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "AddUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Jose",
+									"type": "text"
+								},
+								{
+									"key": "surname",
+									"value": "Morejon",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "jmojeron99",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "jmojeron9@kinal.edu.gt",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Jmojeron111!!!",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "123456783",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "CLIENT",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/register",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "pmojeron99",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Pmojeron500!!!",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "test",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E4MzAzMTIyYjViZjRhOGYzM2QzNmIiLCJuYW1lIjoiSm9zZSIsInVzZXJuYW1lIjoianBlMTUiLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzM5MDc1NjY1LCJleHAiOjE3MzkzMzQ4NjV9.dKLQV7JtDZ4ZTMXXwC9hbb9QDaklDiRlQxvIv0V_YBQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "Authorization",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E4MTM2NThhMDA0MDIxMzU5ZDVlZmYiLCJuYW1lIjoiSnVhbiIsInVzZXJuYW1lIjoianVlcGUxMSIsInJvbGUiOiJDTElFTlQiLCJpYXQiOjE3MzkwNjgyOTEsImV4cCI6MTczOTA3OTA5MX0.8ratICnlUUAO-NDKLyVCk0vi82MeCKa0W5FPOxvOjk4",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/test",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarUno",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E4MzJjY2U4OTFjOWIyMDllZTBlZjAiLCJuYW1lIjoiUGVkcm8iLCJ1c2VybmFtZSI6InBtb2plcm9uOTkiLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzM5MTQxMzYwLCJleHAiOjE3Mzk0MDA1NjB9.pE8GeQAjNUldjRpYfXBdCf1pDIS1GZdJZvnWVLj0JV8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:3626/v1/user/67a832cce891c9b209ee0ef0",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"v1",
+								"user",
+								"67a832cce891c9b209ee0ef0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarTodos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E4MzAzMTIyYjViZjRhOGYzM2QzNmIiLCJuYW1lIjoiSm9zZSIsInVzZXJuYW1lIjoianBlMTUiLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzM5MDc1NjY1LCJleHAiOjE3MzkzMzQ4NjV9.dKLQV7JtDZ4ZTMXXwC9hbb9QDaklDiRlQxvIv0V_YBQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3626/v1/user/",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"v1",
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateUser",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Julio",
+									"type": "text"
+								},
+								{
+									"key": "surname",
+									"value": "Pedroo",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "jpee17",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "jpee17@kinal.edu.gt",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "juepe333D!!!",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "phone",
+									"value": "1234567845",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "CLIENT",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/v1/user/updateUser/67a8303122b5bf4a8f33d36b",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"v1",
+								"user",
+								"updateUser",
+								"67a8303122b5bf4a8f33d36b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdatePassword",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E4MzJjY2U4OTFjOWIyMDllZTBlZjAiLCJuYW1lIjoiUGVkcm8iLCJ1c2VybmFtZSI6InBtb2plcm9uOTkiLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzM5MTE0NzUwLCJleHAiOjE3MzkzNzM5NTB9.UuDmrjWf49--fctuca1dEQNBqJB2tk4ipOpiM__ackg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "currentPassword",
+									"value": "Pmojeron500!!!",
+									"type": "text"
+								},
+								{
+									"key": "newPassword",
+									"value": "Pmojeron567!!! ",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/v1/user/cambiarPassword/67a832cce891c9b209ee0ef0",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"v1",
+								"user",
+								"cambiarPassword",
+								"67a832cce891c9b209ee0ef0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Juancambio",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "surname",
+									"value": "Pedro",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "username",
+									"value": "Juepe13",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "juepe13@kinal.edu.gt",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "juepe333D!!!",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "phone",
+									"value": "1234567843",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "role",
+									"value": "CLIENT",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/v1/user/deleteUser/67a8303122b5bf4a8f33d36b",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"v1",
+								"user",
+								"deleteUser",
+								"67a8303122b5bf4a8f33d36b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Appointment",
+			"item": [
+				{
+					"name": "AddCitas",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E4MzJjY2U4OTFjOWIyMDllZTBlZjAiLCJuYW1lIjoiUGVkcm8iLCJ1c2VybmFtZSI6InBtb2plcm9uOTkiLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzM5MTM5OTc2LCJleHAiOjE3MzkzOTkxNzZ9.Lj__4y1QhZiRXEVkw4_RAiSJzyQv4SVEjp247c_VjMo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "date",
+									"value": "2025-12-17",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "consulta del mes",
+									"type": "text"
+								},
+								{
+									"key": "user",
+									"value": "67a832cce891c9b209ee0ef0",
+									"type": "text"
+								},
+								{
+									"key": "animal",
+									"value": "67a926e210df89c310edaa3a",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3626/v1/appointment/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"v1",
+								"appointment",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarTodos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:3626/v1/appointment/",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"v1",
+								"appointment",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarUNO",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:3626/v1/appointment/67a92d13e62f7d825a16fcf0",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"v1",
+								"appointment",
+								"67a92d13e62f7d825a16fcf0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateAppointment",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E4MzJjY2U4OTFjOWIyMDllZTBlZjAiLCJuYW1lIjoiUGVkcm8iLCJ1c2VybmFtZSI6InBtb2plcm9uOTkiLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzM5MTM5OTc2LCJleHAiOjE3MzkzOTkxNzZ9.Lj__4y1QhZiRXEVkw4_RAiSJzyQv4SVEjp247c_VjMo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "date",
+									"value": "2023-02-14",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "consulta del año",
+									"type": "text"
+								},
+								{
+									"key": "user",
+									"value": "67a832cce891c9b209ee0ef0",
+									"type": "text"
+								},
+								{
+									"key": "animal",
+									"value": "67a926e210df89c310edaa3a",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3626/v1/appointment/updateAppointment/67a92d13e62f7d825a16fcf0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"v1",
+								"appointment",
+								"updateAppointment",
+								"67a92d13e62f7d825a16fcf0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAppointment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3626/v1/appointment/deleteAppointment/67a9362c36031107fba13e4a",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"v1",
+								"appointment",
+								"deleteAppointment",
+								"67a9362c36031107fba13e4a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
